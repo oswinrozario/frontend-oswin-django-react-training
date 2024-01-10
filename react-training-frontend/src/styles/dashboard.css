@@ -1,12 +1,18 @@
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* custom-dashboard.css */
+
+/* Add animation for the dashboard header */
+.dashboard-header h4 {
+  animation: slideInUp 1s ease-in-out;
 }
 
-.dashboard-header {
-  animation: fadeIn 0.5s ease-in-out;
+/* Keyframes for the slideInUp animation */
+@keyframes slideInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

@@ -6,6 +6,9 @@ import Start from "./components/Start";
 import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
 import PrivateRoute from "./components/PrivateRoute";
+import Employee from "./components/Employee";
+import AddEmployee from "./components/AddEmployee";
+import EditEmployee from "./components/EditEmployee";
 
 function App() {
   return (
@@ -22,7 +25,17 @@ function App() {
               <Dashboard />
             </PrivateRoute>
           }
-        ></Route>
+        >
+          <Route path="/dashboard/employee" element={<Employee />}></Route>
+          <Route
+            path="/dashboard/add_employee"
+            element={<AddEmployee />}
+          ></Route>
+          <Route
+            path="/dashboard/edit_employee/:id"
+            element={<EditEmployee />}
+          ></Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   );

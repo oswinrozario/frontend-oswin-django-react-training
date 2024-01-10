@@ -21,7 +21,7 @@ const Login = () => {
       .then((result) => {
         if (result.data.access_token) {
           localStorage.setItem("token", result.data.access_token);
-          navigate("/dashboard");
+          navigate("/dashboard/employee");
         } else {
           setError("Invalid Login Credentials");
         }
