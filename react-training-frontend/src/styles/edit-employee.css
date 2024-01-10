@@ -1,0 +1,28 @@
+/* edit-employee.css */
+
+/* Add animation for the EditEmployee form */
+.edit-employee-form {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for the fadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Additional styles for better aesthetics */
+.edit-employee-container {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.edit-employee-form {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
